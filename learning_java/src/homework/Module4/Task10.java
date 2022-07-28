@@ -11,7 +11,6 @@ public class Task10 {
             this.lines = lines;
         }
         public static Task10.Digit[] createDigits(String... lines) {
-            int height = lines.length;
             int width = (lines[0].length() - 9 /* десять цифр => девять пробелов */) / 10;
             return IntStream
                     .range(0, 10)  // Stream из цифр 0-9
