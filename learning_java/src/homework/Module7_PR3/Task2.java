@@ -33,6 +33,18 @@ public class Task2 {
         return Integer.toBinaryString(a^b); // 1 | 0 = 1, else 0
     }
 
+    public String signedLeftShift (int a, int b){
+        return Integer.toBinaryString(a<<b);
+    }
+
+    public String signedRightShift (int a, int b){
+        return Integer.toBinaryString(a>>b);
+    }
+
+    public String unsignedRightShift (int a, int b){
+        return Integer.toBinaryString(a>>>b);
+    }
+
     public static void main(String[] args) {
         Task2 obj = new Task2();
         System.out.println("First number " + obj.display(obj.firstBinaryNumber));
@@ -45,8 +57,12 @@ public class Task2 {
                 + obj.display(obj.secondBinaryNumber) + " = " + obj.or(obj.firstBinaryNumber, obj.secondBinaryNumber));
         System.out.println(obj.display(obj.firstBinaryNumber) + " XOR "
                 + obj.display(obj.secondBinaryNumber) + " = " + obj.xor(obj.firstBinaryNumber, obj.secondBinaryNumber));
+        System.out.println(obj.display(obj.firstBinaryNumber) + " << 1"
+                + " = " + obj.signedLeftShift(obj.firstBinaryNumber, 1));
+        System.out.println(obj.display(obj.firstBinaryNumber) + " >> 1"
+                + " = " + obj.signedRightShift(obj.firstBinaryNumber, 1));
+        System.out.println(obj.display(obj.firstBinaryNumber) + " >>> 2"
+                + " = " + obj.unsignedRightShift(obj.firstBinaryNumber, 2));
+
     }
-
-
-
 }
