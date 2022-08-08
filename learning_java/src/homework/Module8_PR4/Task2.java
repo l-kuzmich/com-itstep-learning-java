@@ -8,15 +8,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+class Student{
+    String lastName;
+    String firstName;
+    double mark;
+}
+
 public class Task2 {
 
     public void maxMark (List<Student> s){
         double maxMark = 0;
         int maxIndex = 0;
         for (int i = 0; i < s.size() - 1; i++) {
-            if(s.get(i + 1).mark > s.get(i).mark){
-                maxMark = s.get(i + 1).mark;
-                maxIndex = i + 1;
+            if(s.get(i).mark > maxMark){
+                maxMark = s.get(i).mark;
+                maxIndex = i;
             }
         }
         System.out.println("The maximum mark in a group has " + s.get(maxIndex).lastName + " "
@@ -38,7 +44,7 @@ public class Task2 {
         int n = sc.nextInt();
         System.out.print("Numbers of students: " + n + "\n");
 
-        List<Student> studentList = new ArrayList<Student>(n);
+        List<Student> studentList = new ArrayList<>(n);
         for (int i = 0; i < n; i++) {
             Student student = new Student();
             student.lastName = sc.next();
@@ -50,9 +56,4 @@ public class Task2 {
         obj.displayList(studentList);
         obj.maxMark(studentList);
     }
-}
-class Student{
-    String lastName;
-    String firstName;
-    double mark;
 }
