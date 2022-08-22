@@ -6,11 +6,11 @@ import java.io.InputStreamReader;
 
 public class Controller {
 
-    private int getDirection (){
-        int direction = 0;
+    private char getDirection (){
+        char direction = ' ';
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            direction = Integer.parseInt(br.readLine());
+            direction = br.readLine().charAt(0);
         } catch (IOException ex){
             System.out.println("Input error");
         }
@@ -18,22 +18,22 @@ public class Controller {
     }
 
     public void movePerson (Map map){
-        int direction = getDirection();
+        char direction = getDirection();
         switch (direction) {
-            case 4 : {
+            case 'a' : {
                 map.goToLeft();
                 break;
             }
-            case 6 :
+            case 'd' :
             {
                 map.goToRight();
                 break;
             }
-            case 8 : {
+            case 'w' : {
                 map.goToTop();
                 break;
             }
-            case 2 : {
+            case 's' : {
                 map.goToBottom();
                 break;
             }

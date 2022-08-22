@@ -67,11 +67,13 @@ public class Game extends Map{
         map = game.generateMap();
         game.displayMap(map.map);
 
-        while (/*map.map[0][19] == 'P'*/ true){
+        while (map.map[0][19] != 'P'){
 
             controller.movePerson(map);
             game.displayMap(map.map);
+
         }
+        System.out.println("You win!");
 
     }
 }

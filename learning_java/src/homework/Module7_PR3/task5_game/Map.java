@@ -4,46 +4,64 @@ public class Map {
 
     public char[][] map;
 
-    int x = 9; //start position (x,y)
-    int y = 0;
+    public int x = 9; //start position (x,y)
+    public int y = 0;
 
     public void goToTop() {
-        if (map[x--][y] == '#'){
+        if (x == 0) {
             System.out.println("There is no way!");
-            return;
         } else {
-            map[x--][y] = 'P';
-            map[x++][y] = '-';
+            if (map[--x][y] == '#') {
+                System.out.println("There is no way!");
+                x++;
+            } else {
+                map[++x][y] = '-';
+                map[--x][y] = 'P';
+            }
         }
     }
 
     public void goToRight() {
-        if (map[x][y++] == '#'){
+        if (y == 19) {
             System.out.println("There is no way!");
-            return;
         } else {
-            map[x][y++] = 'P';
-            map[x][y--] = '-';
+            if (map[x][++y] == '#') {
+                System.out.println("There is no way!");
+                y--;
+            } else {
+                map[x][--y] = '-';
+                map[x][++y] = 'P';
+            }
         }
     }
 
     public void goToLeft() {
-        if (map[x][y--] == '#'){
+        if (y == 0) {
             System.out.println("There is no way!");
-            return;
-        } else {
-            map[x][y--] = 'P';
-            map[x][y++] = '-';
+        }
+        else {
+            if (map[x][--y] == '#') {
+                System.out.println("There is no way!");
+                y++;
+            } else {
+                map[x][++y] = '-';
+                map[x][--y] = 'P';
+            }
         }
     }
 
     public void goToBottom() {
-        if (map[x++][y] == '#'){
+        if (x == 9) {
             System.out.println("There is no way!");
-            return;
-        } else {
-            map[x++][y] = 'P';
-            map[x--][y] = '-';
+        }
+        else {
+            if (map[++x][y] == '#') {
+                System.out.println("There is no way!");
+                x--;
+            } else {
+                map[--x][y] = '-';
+                map[++x][y] = 'P';
+            }
         }
     }
 }
