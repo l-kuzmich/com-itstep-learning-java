@@ -1,4 +1,4 @@
-package homework.Module7_PR3.task5_game;
+package homework.Module7_PR3.Task5_Game;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ public class Controller {
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             direction = br.readLine().charAt(0);
-        } catch (IOException ex){
+        } catch (Exception ex){
             System.out.println("Input error");
         }
         return direction;

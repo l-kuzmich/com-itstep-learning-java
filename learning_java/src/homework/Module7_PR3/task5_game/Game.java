@@ -1,4 +1,4 @@
-package homework.Module7_PR3.task5_game;
+package homework.Module7_PR3.Task5_Game;
 
 import java.util.Random;
 
