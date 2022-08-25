@@ -11,7 +11,10 @@ package homework.Module9_PR5;
 public class Task4 {
     public static void main(String[] args) {
         Integer intNum = 4;
-        Double doubleNum = 5.6;
+        Double doubleNum = new Double(intNum);
+
+        Integer a = null;
+        System.out.println(a);
 
         Double sum = intNum + doubleNum;
         System.out.println(sum);
