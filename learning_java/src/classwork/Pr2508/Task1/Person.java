@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 public class Person {
     private String name;
     private LocalDate dateOfBirth;
-    private int phone;
+    private String phone;
     private String city;
     private String country;
     private String address;
@@ -16,36 +16,38 @@ public class Person {
 
     public void setName() {
         System.out.println("Input name");
-        String name = scanner.nextLine();
+        this.name = scanner.nextLine();
     }
 
-    public String getName(String name) {
+    public String getName() {
         return name;
     }
 
     public void setDateOfBirth() {
-        System.out.println("Input date of birth (dd mm yyyy)");
-        LocalDate dateOfBirth = LocalDate.of(scanner.nextInt(), scanner.nextInt(), scanner.nextInt());
+        System.out.println("Input date of birth (yyyy mm dd)");
+        this.dateOfBirth = LocalDate.of(scanner.nextInt(), scanner.nextInt(), scanner.nextInt());
     }
 
-    public LocalDate getDateOfBirth(LocalDate dateOfBirth) {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
     public void setPhone() {
-        System.out.println("Input phone +375(xx)xxx-xx-xx");
-        int phone = scanner.nextInt();
-        Pattern pattern = Pattern.compile("^(\\+\\d{1,3}( )?)?((\\(\\d{3}\\))|\\d{3})[- .]?\\d{3}[- .]?\\d{4}$");
-        Matcher matcher = pattern.matcher(Integer.toString(phone));
-
-        if (matcher.matches()) {
-        } else {
-            System.out.println("Wrong phone input");
-        }
+        System.out.println("Input phone 375xxxxxxxxx");
+        this.phone = scanner.nextLine();
+//        Pattern pattern = Pattern.compile("\\d{12}");
+//        Matcher matcher = pattern.matcher(Integer.toString(phone));
+//
+//        if (matcher.matches()) {
+//            this.phone = phone;
+//
+//        } else {
+//            System.out.println("Wrong phone input");
+//        }
 
     }
 
-    public int getPhone(int phone) {
+    public String getPhone() {
         return phone;
     }
 
