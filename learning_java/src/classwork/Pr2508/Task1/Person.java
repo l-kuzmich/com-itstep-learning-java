@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 public class Person {
     private String name;
     private LocalDate dateOfBirth;
-    private String phone;
+    private int phone;
     private String city;
     private String country;
     private String address;
@@ -34,7 +34,7 @@ public class Person {
 
     public void setPhone() {
         System.out.println("Input phone 375xxxxxxxxx");
-        this.phone = scanner.nextLine();
+        this.phone = scanner.nextInt();
 //        Pattern pattern = Pattern.compile("\\d{12}");
 //        Matcher matcher = pattern.matcher(Integer.toString(phone));
 //
@@ -47,7 +47,7 @@ public class Person {
 
     }
 
-    public String getPhone() {
+    public int getPhone() {
         return phone;
     }
 
