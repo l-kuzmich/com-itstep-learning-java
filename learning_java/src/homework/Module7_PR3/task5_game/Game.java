@@ -61,7 +61,7 @@ public class Game extends Map{
 
     public static void main(String[] args) {
         Game game = new Game();
-        Map map = new Map();
+        Map map;
         Controller controller = new Controller();
 
         map = game.generateMap();
