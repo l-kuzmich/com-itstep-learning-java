@@ -1,7 +1,7 @@
-package com.aqa.framework.example.page.element.login.language_element;
+package classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.element.login.language_element;
 
-import com.aqa.framework.example.annotation.Element;
-import com.aqa.framework.example.page.element.Link;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.annotation.Element;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.element.Link;
 
 @Element(elementName = "Language Element")
 public class LanguageElement extends Link {

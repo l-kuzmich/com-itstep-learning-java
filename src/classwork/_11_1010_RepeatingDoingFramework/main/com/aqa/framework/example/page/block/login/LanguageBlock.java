@@ -1,11 +1,11 @@
-package com.aqa.framework.example.page.block.login;
+package classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.login;
 
-import com.aqa.framework.example.annotation.Block;
-import com.aqa.framework.example.page.block.BaseBlock;
-import com.aqa.framework.example.page.block_interface.language_element.HasLanguageElement;
-import com.aqa.framework.example.page.block_interface.language_element.HasTitleLanguageElement;
-import com.aqa.framework.example.page.element.login.language_element.LanguageElement;
-import com.aqa.framework.example.page.element.login.language_element.TitleLanguageElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.annotation.Block;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.BaseBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block_interface.language_element.HasLanguageElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block_interface.language_element.HasTitleLanguageElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.element.login.language_element.LanguageElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.element.login.language_element.TitleLanguageElement;
 
 @Block(blockName = "Language login Block")
 public class LanguageBlock extends BaseBlock implements HasLanguageElement, HasTitleLanguageElement {

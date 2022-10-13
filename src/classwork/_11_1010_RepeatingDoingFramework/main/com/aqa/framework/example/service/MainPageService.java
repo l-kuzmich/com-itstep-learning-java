@@ -1,8 +1,8 @@
-package com.aqa.framework.example.service;
+package classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.service;
 
-import com.aqa.framework.example.annotation.Service;
-import com.aqa.framework.example.page.MainPage;
-import com.aqa.framework.example.service.service_interface.HasMainPage;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.annotation.Service;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.MainPage;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.service.service_interface.HasMainPage;
 
 @Service(serviceName = "Main page service")
 public class MainPageService extends BaseService implements HasMainPage {

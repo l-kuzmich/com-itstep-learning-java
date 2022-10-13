@@ -1,7 +1,7 @@
-package com.aqa.framework.example.page.element.login;
+package classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.element.login;
 
-import com.aqa.framework.example.annotation.Element;
-import com.aqa.framework.example.page.element.Link;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.annotation.Element;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.element.Link;
 
 @Element(elementName = "Recovery password Element")
 public class RecoveryPasswordElement extends Link {

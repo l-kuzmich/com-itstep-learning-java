@@ -1,6 +1,6 @@
-package com.aqa.framework.example.page.block.left_menu;
+package classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.left_menu;
 
-import com.aqa.framework.example.page.block.BaseBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.BaseBlock;
 
 public abstract class LeftMenuBlock extends BaseBlock {
 }

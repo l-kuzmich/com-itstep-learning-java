@@ -1,22 +1,22 @@
-package com.aqa.framework.example.page;
+package classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page;
 
-import com.aqa.framework.example.annotation.Page;
-import com.aqa.framework.example.page.block.TopMenuBlock;
-import com.aqa.framework.example.page.block.left_menu.FooterLeftMenuBlock;
-import com.aqa.framework.example.page.block.left_menu.HeaderLeftMenuBlock;
-import com.aqa.framework.example.page.block.left_menu.NavigationLeftMenuBlock;
-import com.aqa.framework.example.page.block.present.HeaderBlock;
-import com.aqa.framework.example.page.block.present.MaterialInformationBlock;
-import com.aqa.framework.example.page.block.present.NavigationBlock;
-import com.aqa.framework.example.page.block.present.StudentsTableBlock;
-import com.aqa.framework.example.page.page_interface.HasTopMenuBlock;
-import com.aqa.framework.example.page.page_interface.left_menu.HasFooterLeftMenuBlock;
-import com.aqa.framework.example.page.page_interface.left_menu.HasHeaderLeftMenuBlock;
-import com.aqa.framework.example.page.page_interface.left_menu.HasNavigationLeftMenuBlock;
-import com.aqa.framework.example.page.page_interface.present.HasHeaderBlock;
-import com.aqa.framework.example.page.page_interface.present.HasMaterialInformationBlock;
-import com.aqa.framework.example.page.page_interface.present.HasNavigationBlock;
-import com.aqa.framework.example.page.page_interface.present.HasStudentsTableBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.annotation.Page;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.TopMenuBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.left_menu.FooterLeftMenuBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.left_menu.HeaderLeftMenuBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.left_menu.NavigationLeftMenuBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.present.HeaderBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.present.MaterialInformationBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.present.NavigationBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.present.StudentsTableBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.page_interface.HasTopMenuBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.page_interface.left_menu.HasFooterLeftMenuBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.page_interface.left_menu.HasHeaderLeftMenuBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.page_interface.left_menu.HasNavigationLeftMenuBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.page_interface.present.HasHeaderBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.page_interface.present.HasMaterialInformationBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.page_interface.present.HasNavigationBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.page_interface.present.HasStudentsTableBlock;
 
 @Page(pageName = "Present page")
 public class PresentPage extends BasePage implements HasTopMenuBlock, HasFooterLeftMenuBlock, HasHeaderLeftMenuBlock,

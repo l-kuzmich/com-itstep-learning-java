@@ -1,6 +1,6 @@
-package com.aqa.framework.example.page.page_interface.present;
+package classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.page_interface.present;
 
-import com.aqa.framework.example.page.block.present.HeaderBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.present.HeaderBlock;
 
 public interface HasHeaderBlock {
 

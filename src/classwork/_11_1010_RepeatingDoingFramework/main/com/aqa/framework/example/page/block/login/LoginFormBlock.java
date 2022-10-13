@@ -1,15 +1,15 @@
-package com.aqa.framework.example.page.block.login;
+package classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.login;
 
-import com.aqa.framework.example.annotation.Block;
-import com.aqa.framework.example.page.block.BaseBlock;
-import com.aqa.framework.example.page.block_interface.HasLoginButtonElement;
-import com.aqa.framework.example.page.block_interface.HasLoginFieldElement;
-import com.aqa.framework.example.page.block_interface.HasPasswordFieldElement;
-import com.aqa.framework.example.page.block_interface.HasRecoveryPasswordElement;
-import com.aqa.framework.example.page.element.login.LoginButtonElement;
-import com.aqa.framework.example.page.element.login.LoginFieldElement;
-import com.aqa.framework.example.page.element.login.PasswordFieldElement;
-import com.aqa.framework.example.page.element.login.RecoveryPasswordElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.annotation.Block;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.BaseBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block_interface.HasLoginButtonElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block_interface.HasLoginFieldElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block_interface.HasPasswordFieldElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block_interface.HasRecoveryPasswordElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.element.login.LoginButtonElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.element.login.LoginFieldElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.element.login.PasswordFieldElement;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.element.login.RecoveryPasswordElement;
 
 @Block(blockName = "Login Form login Block")
 public class LoginFormBlock extends BaseBlock implements HasLoginButtonElement, HasLoginFieldElement, HasPasswordFieldElement, HasRecoveryPasswordElement {

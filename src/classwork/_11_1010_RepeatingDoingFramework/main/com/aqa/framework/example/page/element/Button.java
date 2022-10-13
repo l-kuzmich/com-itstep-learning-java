@@ -1,6 +1,6 @@
-package com.aqa.framework.example.page.element;
+package classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.element;
 
-import com.aqa.framework.example.annotation.Element;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.annotation.Element;
 
 @Element(elementName = "Button root Element")
 public class Button extends BaseElement {

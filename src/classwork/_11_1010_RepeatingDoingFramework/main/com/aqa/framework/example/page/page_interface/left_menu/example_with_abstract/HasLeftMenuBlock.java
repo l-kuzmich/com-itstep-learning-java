@@ -1,6 +1,6 @@
-package com.aqa.framework.example.page.page_interface.left_menu.example_with_abstract;
+package classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.page_interface.left_menu.example_with_abstract;
 
-import com.aqa.framework.example.page.block.left_menu.LeftMenuBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.left_menu.LeftMenuBlock;
 
 public interface HasLeftMenuBlock {
 

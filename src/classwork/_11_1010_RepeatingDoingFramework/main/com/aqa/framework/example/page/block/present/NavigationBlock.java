@@ -1,7 +1,7 @@
-package com.aqa.framework.example.page.block.present;
+package classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.present;
 
-import com.aqa.framework.example.annotation.Block;
-import com.aqa.framework.example.page.block.BaseBlock;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.annotation.Block;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.block.BaseBlock;
 
 @Block(blockName = "Navigation Present Block")
 public class NavigationBlock extends BaseBlock {

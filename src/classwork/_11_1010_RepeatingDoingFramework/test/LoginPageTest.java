@@ -1,5 +1,7 @@
-import com.aqa.framework.example.page.LoginPage;
-import com.aqa.framework.example.service.LoginPageService;
+package classwork._11_1010_RepeatingDoingFramework.test;
+
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.page.LoginPage;
+import classwork._11_1010_RepeatingDoingFramework.main.com.aqa.framework.example.service.LoginPageService;
 
 public class LoginPageTest {
 
