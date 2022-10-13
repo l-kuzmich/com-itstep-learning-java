@@ -1,2 +1,8 @@
-package com.aqa.framework.example.service.service_interface;public interface HasScheludePage {
+package com.aqa.framework.example.service.service_interface;
+
+import com.aqa.framework.example.page.SchedulePage;
+
+public interface HasSchedulePage {
+
+    SchedulePage getSchedulePage();
 }

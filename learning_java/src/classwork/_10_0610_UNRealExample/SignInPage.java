@@ -1,9 +1,9 @@
-package classwork._10_0610_RealExample;
+package classwork._10_0610_UNRealExample;
 
-import classwork._10_0610_RealExample.check.HasLoginField;
-import classwork._10_0610_RealExample.check.HasPasswordField;
-import classwork._10_0610_RealExample.check.HasSignInButton;
-import classwork._10_0610_RealExample.loginPopUp.SignUpPopUp;
+import classwork._10_0610_UNRealExample.check.HasLoginField;
+import classwork._10_0610_UNRealExample.check.HasPasswordField;
+import classwork._10_0610_UNRealExample.check.HasSignInButton;
+import classwork._10_0610_UNRealExample.loginPopUp.SignUpPopUp;
 
 public class SignInPage extends BasePage implements HasLoginField, HasPasswordField, HasSignInButton {
     @Override

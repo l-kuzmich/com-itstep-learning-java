@@ -1,6 +1,6 @@
 package com.aqa.framework.example.page.element;
 
-public abstract class Element {
+public abstract class BaseElement {
 
     public String elementSelector;
 }

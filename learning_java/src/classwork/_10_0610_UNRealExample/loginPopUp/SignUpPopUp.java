@@ -1,8 +1,8 @@
-package classwork._10_0610_RealExample.loginPopUp;
+package classwork._10_0610_UNRealExample.loginPopUp;
 
-import classwork._10_0610_RealExample.loginPopUp.elements.LoginField;
-import classwork._10_0610_RealExample.loginPopUp.elements.PasswordField;
-import classwork._10_0610_RealExample.loginPopUp.elements.SingInButton;
+import classwork._10_0610_UNRealExample.loginPopUp.elements.LoginField;
+import classwork._10_0610_UNRealExample.loginPopUp.elements.PasswordField;
+import classwork._10_0610_UNRealExample.loginPopUp.elements.SingInButton;
 
 public class SignUpPopUp {
 

@@ -1,2 +1,7 @@
-package com.aqa.framework.examle.page.block;public class BaseBlock {
+package com.aqa.framework.example.page.block;
+
+import com.aqa.framework.example.annotation.Block;
+
+@Block(blockName = "Base Block")
+public abstract class BaseBlock {
 }

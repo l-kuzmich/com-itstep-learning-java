@@ -1,2 +1,4 @@
-package com.aqa.framework.examle.page;public class BasePage {
+package com.aqa.framework.example.page;
+
+public abstract class BasePage {
 }

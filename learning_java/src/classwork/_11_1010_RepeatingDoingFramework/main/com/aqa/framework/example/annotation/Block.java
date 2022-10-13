@@ -1,2 +1,6 @@
-package com.aqa.framework.example.annotation;public @interface Block {
+package com.aqa.framework.example.annotation;
+
+public @interface Block {
+
+    String blockName();
 }

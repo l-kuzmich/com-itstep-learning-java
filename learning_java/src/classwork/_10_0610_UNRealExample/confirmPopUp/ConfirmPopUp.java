@@ -1,7 +1,7 @@
-package classwork._10_0610_RealExample.confirmPopUp;
+package classwork._10_0610_UNRealExample.confirmPopUp;
 
-import classwork._10_0610_RealExample.confirmPopUp.elements.CloseButton;
-import classwork._10_0610_RealExample.confirmPopUp.elements.OkButton;
+import classwork._10_0610_UNRealExample.confirmPopUp.elements.CloseButton;
+import classwork._10_0610_UNRealExample.confirmPopUp.elements.OkButton;
 
 public class ConfirmPopUp {
 

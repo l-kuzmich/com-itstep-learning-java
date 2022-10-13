@@ -1,6 +1,6 @@
-package classwork._10_0610_RealExample.check;
+package classwork._10_0610_UNRealExample.check;
 
-import classwork._10_0610_RealExample.loginPopUp.SignUpPopUp;
+import classwork._10_0610_UNRealExample.loginPopUp.SignUpPopUp;
 
 public interface HasLoginField {
     SignUpPopUp getSignUpPopUp ();

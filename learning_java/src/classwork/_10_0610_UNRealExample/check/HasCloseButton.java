@@ -1,6 +1,6 @@
-package classwork._10_0610_RealExample.check;
+package classwork._10_0610_UNRealExample.check;
 
-import classwork._10_0610_RealExample.confirmPopUp.ConfirmPopUp;
+import classwork._10_0610_UNRealExample.confirmPopUp.ConfirmPopUp;
 
 public interface HasCloseButton {
     ConfirmPopUp getConfirmPopUp ();

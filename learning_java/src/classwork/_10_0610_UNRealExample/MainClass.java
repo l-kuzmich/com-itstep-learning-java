@@ -1,6 +1,6 @@
 package classwork._10_0610_UNRealExample;
 
-public class Main {
+public class MainClass {
     public static void main(String[] args) {
 
         HomePage homePage = new HomePage();

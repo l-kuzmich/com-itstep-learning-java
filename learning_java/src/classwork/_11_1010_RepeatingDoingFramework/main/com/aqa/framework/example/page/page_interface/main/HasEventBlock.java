@@ -1,2 +1,8 @@
-package com.aqa.framework.example.page.page_interface.main;public interface HaseventBlock {
+package com.aqa.framework.example.page.page_interface.main;
+
+import com.aqa.framework.example.page.block.main.EventBlock;
+
+public interface HasEventBlock {
+
+    EventBlock getEventBlock();
 }
