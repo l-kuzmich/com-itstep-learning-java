@@ -6,23 +6,13 @@ public class MainClass {
 
         try {
             mainClass.methodWithFirstCheckedException();
-        } catch (FirstCheckedException e) {
-            System.out.println(e.getMessage());
-        }
-
-        try {
             mainClass.methodWithSecondCheckedException();
-        } catch (SecondCheckedException e) {
+            mainClass.methodWithSonOfUncheckedException();
+            mainClass.methodWithUncheckedException();
+        } catch (FirstCheckedException | SecondCheckedException | UncheckedException e) {
             System.out.println(e.getMessage());
         }
 
-        try {
-            mainClass.methodWithUncheckedException();
-        } catch (SonOfUncheckedException e){
-            System.out.println(e.getMessage());
-        } catch (UncheckedException ex){
-            System.out.println(ex.getMessage());
-        }
     }
 
     public void methodWithFirstCheckedException () throws FirstCheckedException{
