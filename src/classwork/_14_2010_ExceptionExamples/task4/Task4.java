@@ -9,15 +9,22 @@ package classwork._14_2010_ExceptionExamples.task4;
 import java.util.Scanner;
 
 public class Task4 {
+
+    public String inputtedString = "";
+    String [] array;
+
     public static void main(String[] args) {
 
         Task4 task4 = new Task4();
+        task4.array = task4.prepareArrayNumber();
+
         try {
             task4.validationOfSplitArray();
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
 
+        System.out.println(task4.getArraysSum());
     }
 
     public String getString() {
@@ -25,29 +32,30 @@ public class Task4 {
         return scanner.nextLine();
     }
 
-    public String[] splitByPlus() {
-        return getString().split("\\+");
+    public String[] splitByPlus(String s) {
+        return s.split("\\+");
+    }
+
+    public String [] prepareArrayNumber () {
+        inputtedString = getString();
+        return  array = splitByPlus(inputtedString);
     }
 
     public void validationOfSplitArray() throws IllegalArgumentException {
-        String[] strings = splitByPlus();
-
-        for (String string : strings) {
+        for (String string : array) {
             try {
                 Integer.parseInt(string);
-                System.out.println(getArraysSum(strings));
             } catch (IllegalArgumentException e) {
                 System.out.println("Wrong number " + string);
-                getString();
-                splitByPlus();
+                prepareArrayNumber();
                 validationOfSplitArray();
             }
         }
     }
 
-    public int getArraysSum(String[] strings) {
+    public int getArraysSum() {
         int sum = 0;
-        for (String s : strings) {
+        for (String s : array) {
             sum += Integer.parseInt(s);
         }
         return sum;
