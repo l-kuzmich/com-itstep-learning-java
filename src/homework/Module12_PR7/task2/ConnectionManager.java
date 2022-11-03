@@ -2,7 +2,7 @@ package homework.Module12_PR7.task2;
 
 public class ConnectionManager {
 
-    private static Connection[] connections = new Connection[6];
+    private static Connection[] connections = new Connection[10];
 
     private static int conCount = 0;
 

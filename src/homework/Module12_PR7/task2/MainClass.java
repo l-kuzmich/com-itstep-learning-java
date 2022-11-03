@@ -26,7 +26,7 @@ ConnectionManager имеет следующую функциональность
 public class MainClass {
     public static void main(String[] args) {
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 10; i++) {
             ConnectionManager.getConnection(i);
         }
     }
