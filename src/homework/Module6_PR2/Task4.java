@@ -12,10 +12,10 @@ public class Task4 {
         Random random = new Random();
 
         int number = 0;
-        int sum = 0;
-        int i = 1;
-        while ((number = random.nextInt(100)) != 0){
-            //System.out.println(number);
+        double sum = 0;
+        int i = 0;
+        while ((number = random.nextInt(10)) != 0){
+            System.out.println(number);
             sum += number;
             i++;
         }

@@ -9,27 +9,28 @@ public class Task4 {
 
         enterprise.nameOfSpaceship = "Enterprise";
         enterprise.speedOfSpaceship = 5;
-        enterprise.displayName();
-        enterprise.displaySpeed();
+        enterprise.displaySpaceshipName();
+        enterprise.displaySpaceshipSpeed();
 
         Spaceship fate = new Spaceship();
 
         fate.nameOfSpaceship = "Fate";
         fate.speedOfSpaceship = 4;
-        fate.displayName();
-        fate.displaySpeed();
+        fate.displaySpaceshipName();
+        fate.displaySpaceshipSpeed();
     }
 }
 
 class Spaceship {
-    String nameOfSpaceship;
-    int speedOfSpaceship;
 
-    void displayName(){
-        System.out.printf("Name: %s\n", nameOfSpaceship);
+    public String nameOfSpaceship;
+    public int speedOfSpaceship;
+
+    public void displaySpaceshipName(){
+        System.out.printf("Name: %s\n", this.nameOfSpaceship);
     }
 
-    void displaySpeed(){
-        System.out.printf("Speed: %d\n", speedOfSpaceship);
+    void displaySpaceshipSpeed(){
+        System.out.printf("Speed: %d\n", this.speedOfSpaceship);
     }
 }

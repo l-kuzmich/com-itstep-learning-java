@@ -15,9 +15,11 @@ public class Task3 {
     public static void main(String[] args) {
 
         DataOnly dataOnly = new DataOnly();
+
         dataOnly.i = 12;
         dataOnly.d = 8.6;
         dataOnly.b = true;
+        
         System.out.println(dataOnly.i + " " + dataOnly.d + " " + dataOnly.b);
     }
 }

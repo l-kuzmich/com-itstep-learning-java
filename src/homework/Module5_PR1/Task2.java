@@ -4,12 +4,15 @@ package homework.Module5_PR1;
 to verify that Java performs default initialization.*/
 
 public class Task2 {
-    static int number;
-    static char symbol;
+
+    private static int number;
+    private static char symbol;
 
     public static void main(String[] args) {
-        System.out.println(number);
-        System.out.println(symbol);
+
+        System.out.println(Task2.number);
+        System.out.println(Task2.symbol);
+
     }
 
 }

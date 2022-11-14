@@ -5,12 +5,11 @@ package homework.Module6_PR2;
 
 public class Task3 {
 
-    final int distance = 30;
-    final int time = 2;
+    private final int distance = 30;
+    private final int time = 2;
 
     public int velocity (int distance, int time){
-        int velocity = distance * time;
-        return velocity;
+        return distance / time;
     }
 
     public static void main(String[] args) {
@@ -18,6 +17,6 @@ public class Task3 {
 
         int velocity = obj.velocity(obj.distance, obj.time);
 
-        System.out.println("The velocity equals " + velocity + "km/h");
+        System.out.println("The velocity equals " + velocity + " km/h");
     }
 }

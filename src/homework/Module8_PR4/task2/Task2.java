@@ -1,4 +1,4 @@
-package homework.Module8_PR4;
+package homework.Module8_PR4.task2;
 
 /*Find the maximum mark in a group of students. Print this mark itself and its index.*/
 
@@ -38,7 +38,7 @@ public class Task2 {
 
     public static void main(String[] args) throws FileNotFoundException {
         Task2 obj = new Task2();
-        File file = new File("C:\\Q1822\\com-itstep-learning-java\\learning_java\\src\\homework\\Module8_PR4\\Students.txt");
+        File file = new File("C:\\Q1822\\com-itstep-learning-java\\src\\homework\\Module8_PR4\\task2\\Students.txt");
         Scanner sc = new Scanner(file);
 
         int n = sc.nextInt();
