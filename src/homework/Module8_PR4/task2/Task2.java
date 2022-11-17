@@ -8,11 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class Student{
-    String lastName;
-    String firstName;
-    double mark;
-}
 
 public class Task2 {
 
@@ -20,7 +15,7 @@ public class Task2 {
         double maxMark = 0;
         int maxIndex = 0;
         for (int i = 0; i < s.size() - 1; i++) {
-            if(s.get(i).mark > maxMark){
+            if(s.get(i).mark >= maxMark){
                 maxMark = s.get(i).mark;
                 maxIndex = i;
             }
@@ -31,8 +26,8 @@ public class Task2 {
 
     public void displayList(List<Student> s){
         System.out.print("Last name\t\tFirst name\t\tMark\n");
-        for (int i = 0; i < s.size(); i++) {
-            System.out.print(s.get(i).lastName + "\t\t\t" + s.get(i).firstName + "\t\t\t" + s.get(i).mark + "\n");
+        for (Student student : s) {
+            System.out.print(student.lastName + "\t\t\t" + student.firstName + "\t\t\t" + student.mark + "\n");
         }
     }
 

@@ -19,8 +19,8 @@ public class Task5 {
         String [] arrayOfString = stringOfEmployees.split("--");
 
         List<Employee> employees = new ArrayList<>(arrayOfString.length);
-        for (int i = 0; i < arrayOfString.length; i++) {
-            String[] temp = arrayOfString[i].split(", ");
+        for (String s : arrayOfString) {
+            String[] temp = s.split(", ");
 
             Employee employee = new Employee();
             employee.name = temp[0];
@@ -35,9 +35,9 @@ public class Task5 {
 
     public void displayList(List<Employee> employees){
         System.out.print("Name\t\tYear\t\tPosition\n");
-        for (int i = 0; i < employees.size(); i++) {
-            System.out.print(employees.get(i).name + "\t\t" + employees.get(i).yearOfEntered + "\t\t"
-                    + employees.get(i).position + "\n");
+        for (Employee employee : employees) {
+            System.out.print(employee.name + "\t\t" + employee.yearOfEntered + "\t\t"
+                    + employee.position + "\n");
         }
     }
 
@@ -58,8 +58,3 @@ public class Task5 {
     }
 }
 
-class Employee {
-    String name;
-    int yearOfEntered;
-    String position;
-}

@@ -6,12 +6,13 @@ package homework.Module7_PR3;
 * Combine these two value every way possible using the bitwise operators.
 * Display the results using Integer.toBinaryString().
 * Hint: It's easiest to use hexadecimal constants for this.
-* Note: that Integer.toBinaryString() does not print leading zeroes*/
+* Note: that Integer.toBinaryString() does not print leading zeroes
+* */
 
 public class Task2 {
 
-    final int firstBinaryNumber = 0b1010; //0xA
-    final int secondBinaryNumber = 0b1011; //0xB
+    final int firstBinaryNumber = 0x230; //0xA
+    final int secondBinaryNumber = 0x231; //0xB
 
     public String display (int a){
         return Integer.toBinaryString(a);

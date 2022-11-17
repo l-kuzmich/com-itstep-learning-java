@@ -19,8 +19,8 @@ public class Task3 {
     }
 
     private void displayArray (int[] array){
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
+        for (int j : array) {
+            System.out.print(j + " ");
         }
         System.out.println();
     }
@@ -34,6 +34,13 @@ public class Task3 {
             j++;
         }
 
+        /*int indexInt;
+        for (int i = 0; i<= array.length; i++) {
+            indexInt = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[array.length - 1 -i] = indexInt;
+        }*/
+
         return reverseArray;
     }
 
@@ -44,7 +51,7 @@ public class Task3 {
         System.out.println("Input array's length");
         int arrayLength = sc.nextInt();
 
-        int[] arrayOfNumbers = new int[arrayLength];
+        int[] arrayOfNumbers;
         arrayOfNumbers = obj.generateRandomArray(arrayLength);
 
         obj.displayArray(arrayOfNumbers);
