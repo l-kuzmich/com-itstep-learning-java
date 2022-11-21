@@ -8,7 +8,9 @@ package homework.Module9_PR5;
 public class Task2 {
     public static void main(String[] args) {
         Task2 obj = new Task2();
+
         Person person = new Person("Tom", 25);
+
         System.out.println(person.name);
         person.showName(person.name);
 

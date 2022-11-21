@@ -43,7 +43,7 @@ public class Task5 {
 
     public static void main(String[] args) throws FileNotFoundException {
         Task5 obj = new Task5();
-        File file = new File("C:\\Q1822\\com-itstep-learning-java\\src\\homework\\Module8_PR4\\task5_employee\\employee.txt");
+        File file = new File(".\\src\\homework\\Module8_PR4\\task5_employee\\resourses\\employee.txt");
         Scanner sc = new Scanner(file);
 
         String stringOfEmployees = "";
